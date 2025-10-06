@@ -1,0 +1,741 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Login*/
+#login-body {
+  display: flex;
+  justify-content: flex-end;
+  background-image: url(images/PNP-headquarters-file.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+#pnp-logo {
+  position: fixed;
+  top: 45px;
+  height: 140px;
+  width: 240px;
+  object-fit: cover;
+}
+
+#sign-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(111, 0, 0, 0.5);
+  border-radius: 20px;
+  height: 100vh;
+  width: 33%;
+  background-color: rgb(95, 17, 17);
+  padding: 20px;
+}
+
+#log-btn {
+  height: 40px;
+  width: 70px;
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+#log-guest {
+  height: 50px;
+  width: 100px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#forgot {
+  font-size: 11px;
+  margin-bottom: 20px;
+  color: whitesmoke;
+  text-decoration: underline;
+}
+
+#username, #password {
+  display: flex;
+  height: 30px;
+  width: 200px;
+  margin: 10px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+/* Landing-page*/
+.homepage {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  height: 80px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 -4px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 4px solid #003366;
+}
+
+/* Region-drop */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 20px;
+}
+
+.dropdown > a {
+  padding: 10px 12px;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 140px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  z-index: 10;
+  padding: 4px 0;
+}
+
+.dropdown-content a {
+  padding: 8px 12px;
+  display: block;
+  font-size: 14px;
+  text-decoration: none;
+  color: #333;
+  white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Navbar link */
+.navbar a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 20px;
+  font-weight: 500;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+/* Navbar Link Hover */
+.navbar a:hover {
+  color: rgb(26, 74, 118);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Video  Advert */
+.march-container {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.march-vid {
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+
+.heladvert {
+  width: 40%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('images/PNP-headquarters-file.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-left: 2px solid #003366;
+  font-family: 'Georgia', serif;
+  color: #fff;
+  line-height: 1.6;
+  text-align: center;
+  backdrop-filter: brightness(0.6);
+  border-radius: 0 10px 10px 0;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.heladvert::before {
+  content: "Philippine National Police";
+  display: block;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* SAF Recruitment */
+.saf-recruitment {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #001f3f;
+  color: #ffffff;
+  border-left: 6px solid #ffe600;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  font-family: 'Georgia', serif;
+  text-align: center;
+}
+
+.saf-recruitment h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ffe600;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.saf-recruitment p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.saf-recruitment ul {
+  list-style-type: square;
+  margin: 0 auto 25px auto;
+  padding-left: 20px;
+  text-align: left;
+  max-width: 600px;
+}
+
+.saf-recruitment li {
+  margin-bottom: 10px;
+}
+
+.apply-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ffe600;
+  color: #000;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.apply-btn:hover {
+  background-color: #d6bd00;
+}
+
+/* Side  */
+.side-layout {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+.saf-photo-wrapper img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.saf-content {
+  flex: 1;
+}
+
+/* Police Recruitment */
+.police-recruitment {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #001f3f;
+  padding: 50px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  max-width: 1000px;
+  margin: 50px auto;
+  color: #fff;
+  font-family: 'Georgia', serif;
+  gap: 30px;
+}
+
+.police-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+}
+
+.recruit-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.recruit-text h2 {
+  color: #ffe600;
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.recruit-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.recruit-text ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.recruit-text li {
+  margin-bottom: 10px;
+}
+
+/* SAF Form */
+#recruitment-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 16px;
+  color: #ffe600;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="file"],
+.form-group input[type="date"],
+.form-group input[type="number"],
+.form-group select {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 2px solid #fff;
+  background-color: #001f3f;
+  color: #fff;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #ffe600;
+  outline: none;
+}
+
+.upload-note {
+  font-size: 12px;
+  color: #fff;
+  text-align: left;
+  margin-top: -10px;
+  padding-left: 5px;
+}
+
+/* PNP Form */
+.pnp-recruitment-section {
+  padding: 40px;
+  background-color: #001f3f;
+  color: #fff;
+  max-width: 800px;
+  margin: 60px auto;
+  border-left: 6px solid #ffe600;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  font-family: 'Georgia', serif;
+  text-align: center;
+}
+
+.pnp-recruitment-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ffe600;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.pnp-recruitment-section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  background-color: #f4f4f4;
+  padding: 10px 0;
+  width: 100%;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-time {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  font-family: Arial, sans-serif;
+}
+/* */
+.certificate-section {
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: #ffe600;
+  padding: 25px 30px;
+  border-left: 6px solid #004080;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.certificate-section h2 {
+  color: #003366;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+}
+
+.certificate-section p {
+  margin-bottom: 10px;
+  color: #002244;
+}
+
+.certificate-section ul {
+  list-style: disc inside;
+  color: #002244;
+  font-weight: 600;
+}
+/* Wanted n Missing Persons */
+.person-section {
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-left: 6px solid #990000;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  font-family: 'Arial', sans-serif;
+}
+
+.person-section h2 {
+  color: #990000;
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Grid  Random People */
+.people-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual Person Card */
+.person-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  width: 180px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.person-card:hover {
+  transform: scale(1.05);
+}
+
+.person-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.person-card h3 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.person-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+  
+/* Certificate Section Button */
+.cert-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #003366;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-size: 15px;
+}
+
+.cert-btn:hover {
+  background-color: #001f3f;
+}
+
+/* NBI || Police Clearance Form */
+.clearance-form-section {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-left: 6px solid #003366;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  font-family: 'Arial', sans-serif;
+}
+
+.clearance-form-section h2 {
+  color: #003366;
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.clearance-form-group {
+  margin-bottom: 20px;
+}
+
+.clearance-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #003366;
+}
+
+.clearance-form-group input,
+.clearance-form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.clearance-form-group input:focus,
+.clearance-form-group select:focus {
+  border-color: #003366;
+  outline: none;
+}
+
+.clearance-submit-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 24px;
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.clearance-submit-btn:hover {
+  background-color: #001f3f;
+}
+
+/* NBI Clearance Form Section */
+.nbi-form-section {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 30px 40px;
+  background-color: #001f3f; 
+  border-left: 6px solid #ffe600; 
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  font-family: 'Georgia', serif;
+  color: #ffffff;
+}
+
+.nbi-form-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ffe600;
+  text-align: center;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.nbi-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nbi-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.nbi-form .form-group label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #ffe600;
+}
+
+.nbi-form .form-group input[type="text"],
+.nbi-form .form-group textarea,
+.nbi-form .form-group input[type="file"] {
+  padding: 12px;
+  background-color: #003366;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.nbi-form .form-group input:focus,
+.nbi-form .form-group textarea:focus {
+  border-color: #ffe600;
+  outline: none;
+}
+
+.nbi-form .apply-btn {
+  background-color: #ffe600;
+  color: #000000;
+  padding: 12px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+  width: fit-content;
+}
+
+.nbi-form .apply-btn:hover {
+  background-color: #d6bd00;
+}
+/* Police Clearance Form Section*/
+.police-form-section {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 30px 40px;
+  background-color: #001f3f; 
+  border-left: 6px solid #ffe600; 
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  font-family: 'Georgia', serif;
+  color: #ffffff;
+}
+
+.police-form-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ffe600;
+  text-align: center;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.police-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.police-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.police-form .form-group label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #ffe600;
+}
+
+.police-form .form-group input[type="text"],
+.police-form .form-group textarea,
+.police-form .form-group input[type="file"] {
+  padding: 12px;
+  background-color: #003366;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.police-form .form-group input:focus,
+.police-form .form-group textarea:focus {
+  border-color: #ffe600;
+  outline: none;
+}
+
+.police-form .apply-btn {
+  background-color: #ffe600;
+  color: #000000;
+  padding: 12px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+  width: fit-content;
+}
+
+.police-form .apply-btn:hover {
+  background-color: #d6bd00;
+}
+

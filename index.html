@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">
+          <img src="IMG_1574.HEIC" alt="Developer Photo">
+        </div>
+        <div class="brand-info">
+          <h1>Thomas Carl S. Pada</h1>
+          <span>Student</span>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a class="primary" href="#languages">Languages</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2>Thomas Carl S. Pada 👋</h2>
+        <p>Student here trying to learn the things that is interesting to me.</p>
+
+        <!-- Portfolio image section -->
+        <div class="portfolio-image">
+          <img src="IMG_0284.PNG" alt="Portfolio Preview" />
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <a href="PNPWebsite2/login.html" class="project-card">
+          <img src="PNPWebsite2/images/PNP.jpg" alt="Project 1">
+          <h3>PNP Website</h3>
+          <p>I got bored and why not build a recruitment website.</p>
+        </a>
+        <div class="project-card">
+          <img src="project2.jpg" alt="Project 2">
+          <h3>clone wolfenstien</h3>
+          <p>im trying to clone the old wolfenstien game, i dont even know why.</p>
+        </div>
+        
+      </section>
+
+      <section class="about" id="about">
+        <h3>About Me</h3>
+        <p>I am student who is late on everything from projects to assignment to attendance all the way</p>
+      </section>
+
+      <!-- Languages Section -->
+      <section class="languages" id="languages">
+        <h3>Languages & Tools</h3>
+        <div class="lang-list">
+          <div class="lang-card">HTML</div>
+          <div class="lang-card">CSS</div>
+          <div class="lang-card">JavaScript</div>
+          <div class="lang-card">Java</div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> This website is built with ai, because im too lazy to do it right.</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

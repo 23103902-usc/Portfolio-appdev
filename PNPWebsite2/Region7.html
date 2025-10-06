@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY" defer></script>
+  <script src="javascript.js" defer></script>
+  <title>Region VII - PNP Locator</title>
+</head>
+<body class="homepage">
+  <div class="navbar">
+    <a href="home.html" id="home-tab">Home</a>
+    <div class="dropdown">
+      <a href="#" id="region-tab">Region</a>
+      <div class="dropdown-content">
+        <a href="region7.html">Region VII</a>
+      </div>
+    </div>
+    <a href="#" id="announcements-tab">Announcements</a>
+    <a href="#" id="contacts-tab">Contacts</a>
+  </div>
+
+<!-- NBI Clearance Section -->
+<div class="certificate-section nbi-certificate">
+  <h2>NBI Clearance</h2>
+  <ul>
+    <li>Must be issued within the last 6 months</li>
+    <li>Upload a clear copy in the application form</li>
+  </ul>
+  <a href="nbi.html" class="cert-btn">Apply</a>
+</div>
+
+<!-- Police Clearance Section -->
+<div class="certificate-section police-clearance">
+  <h2>Police Clearance</h2>
+  <ul>
+    <li>Valid for 6 months from date of issue</li>
+    <li>Must be submitted with your application</li>
+  </ul>
+  <a href="polclearance.html" class="cert-btn">Apply</a>
+</div>
+
+
+
+  <!-- Wanted List -->
+  <div class="person-section">
+    <h2>Wanted List</h2>
+    <div id="wanted-list" class="people-grid"></div>
+  </div>
+
+  <!-- Missing Persons -->
+  <div class="person-section">
+    <h2>Missing Persons</h2>
+    <div id="missing-list" class="people-grid"></div>
+  </div>
+
+  <footer>
+    <p class="footer-time">Current Date & Time: <span id="date-time"></span></p>
+  </footer>
+</body>
+</html>

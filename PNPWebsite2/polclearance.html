@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="javascript.js" defer></script>
+  <title>Philippine National Police</title>
+</head>
+<body class="homepage">
+
+  <div class="navbar">
+    <a href="home.html" id="home-tab">Home</a>
+    <div class="dropdown">
+      <a href="#" id="region-tab">Region</a>
+      <div class="dropdown-content">
+        <a href="region7.html">Region VII</a>
+      </div>
+    </div>
+    <a href="#" id="region-tab">Announcements</a>
+    <a href="#" id="contacts-tab">Contacts</a>
+  </div>
+
+  <!-- Police Clearance Form Section -->
+  <section class="police-form-section">
+    <h2>Police Clearance Submission</h2>
+    <form class="police-form" id="police-form">
+      <div class="form-group">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="reason">Reason for Request:</label>
+        <textarea id="reason" name="reason" rows="4" placeholder="Explain your reason..." required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="police-clearance">Upload Police Clearance (PDF/Image):</label>
+        <input type="file" id="police-clearance" name="police-clearance" accept=".pdf, .jpg, .jpeg, .png" required>
+      </div>
+
+      <div class="form-group">
+        <label for="valid-id">Upload 1 Valid Government ID:</label>
+        <input type="file" id="valid-id" name="valid-id" accept=".pdf, .jpg, .jpeg, .png" required>
+      </div>
+
+      <button type="submit" class="apply-btn">Submit Application</button>
+    </form>
+  </section>
+
+  <footer>
+    <p id="date-time" class="footer-time"></p>
+  </footer>
+
+</body>
+</html>
